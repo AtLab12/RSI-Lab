@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="GrpcGreeterClient/Program.cs">
+    <Files>
+      <File FileName="GrpcGreeter/Program.cs" Line="25" Column="1" />
+      <File FileName="GrpcGreeter/Properties/launchSettings.json" Line="5" Column="47" />
+      <File FileName="GrpcGreeterClient/Program.cs" Line="12" Column="19" NotebookId="1" />
+      <File FileName="GrpcGreeter/Services/GreeterService.cs" Line="1" Column="1" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GrpcGreeter" expanded="True">
+            <Node name="GrpcGreeter" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="GrpcGreeterClient" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GrpcGreeter PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{BB26CE1B-DB84-4B06-A477-A890BD12DE2E}" ItemName="GrpcGreeter" ConfigurationId="Default" />
+        <StartupItem ItemId="{210C09E9-2C3D-4540-B5F6-EB5E79B984EA}" ItemName="GrpcGreeterClient" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.GrpcGreeterClient PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

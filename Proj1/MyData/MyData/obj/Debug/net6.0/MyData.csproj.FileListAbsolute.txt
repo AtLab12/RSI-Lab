@@ -1,0 +1,15 @@
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.csproj.AssemblyReference.cache
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.AssemblyInfoInputs.cache
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.AssemblyInfo.cs
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.csproj.CoreCompileInputs.cache
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/bin/Debug/net6.0/MyData
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/bin/Debug/net6.0/MyData.deps.json
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/bin/Debug/net6.0/MyData.runtimeconfig.json
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/bin/Debug/net6.0/MyData.dll
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/bin/Debug/net6.0/MyData.pdb
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.dll
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/refint/MyData.dll
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.pdb
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/MyData.genruntimeconfig.cache
+/Users/mikolajzawada/School/PWR/Sem_6/Rozproszone systemy/Proj1/MyData/MyData/obj/Debug/net6.0/ref/MyData.dll

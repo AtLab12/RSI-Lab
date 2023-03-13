@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "jDRCKIJDQsBefKiz/N0+OtcJ7l25N0w6CLIOegt/nyJFJ5fYEOfgONvnfoCTdqrX04UqcQ7A3y7djV/q0mMCfA==",
+  "success": true,
+  "projectFilePath": "/Users/mikolajzawada/Projects/GrpcGreeter/GrpcGreeterClient/GrpcGreeterClient.csproj",
+  "expectedPackageFiles": [
+    "/Users/mikolajzawada/.nuget/packages/google.protobuf/3.22.1/google.protobuf.3.22.1.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/grpc.core.api/2.51.0/grpc.core.api.2.51.0.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/grpc.net.client/2.51.0/grpc.net.client.2.51.0.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/grpc.net.common/2.51.0/grpc.net.common.2.51.0.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/grpc.tools/2.52.0/grpc.tools.2.52.0.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/microsoft.extensions.logging.abstractions/3.0.3/microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
