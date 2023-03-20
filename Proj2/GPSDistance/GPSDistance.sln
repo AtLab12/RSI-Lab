@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSDistance", "GPSDistance\GPSDistance.csproj", "{52FEA0FA-B3CE-4DF6-8FEC-4F83CB4D5882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSDistanceClient", "GPSDistanceClient\GPSDistanceClient.csproj", "{4107A6C4-057A-4D9C-BF3C-B24D799A83AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52FEA0FA-B3CE-4DF6-8FEC-4F83CB4D5882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FEA0FA-B3CE-4DF6-8FEC-4F83CB4D5882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FEA0FA-B3CE-4DF6-8FEC-4F83CB4D5882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FEA0FA-B3CE-4DF6-8FEC-4F83CB4D5882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4107A6C4-057A-4D9C-BF3C-B24D799A83AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4107A6C4-057A-4D9C-BF3C-B24D799A83AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4107A6C4-057A-4D9C-BF3C-B24D799A83AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4107A6C4-057A-4D9C-BF3C-B24D799A83AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8A3C49E-D551-43E1-B23D-96187F242656}
+	EndGlobalSection
+EndGlobal
