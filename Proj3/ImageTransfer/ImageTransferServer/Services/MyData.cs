@@ -9,6 +9,7 @@ namespace ImageTransferServer
         public static void info()
         {
             Console.WriteLine("Zawada Mikołaj 259431");
+            Console.WriteLine("Zawada Mikołaj 259431");
             Console.WriteLine(DateTime.Now.ToString("dd MMMM, HH:mm:ss", new System.Globalization.CultureInfo("pl-PL")));
             Console.WriteLine(Environment.Version);
             Console.WriteLine(Environment.UserName);

@@ -1,4 +1,5 @@
 using ImageTransferServer;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 MyData.info();
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +10,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddGrpc();
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    // Setup a HTTP/2 endpoint without TLS.
+    options.ListenAnyIP(5097, o => o.Protocols =
+        HttpProtocols.Http2);
+});
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<TransferService>();

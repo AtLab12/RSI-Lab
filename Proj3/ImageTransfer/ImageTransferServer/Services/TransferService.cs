@@ -9,7 +9,7 @@ namespace ImageTransferServer
     {
         public override async Task<Empty> TransferToServer(IAsyncStreamReader<ImageTransferData> requestStream, ServerCallContext context)
         {
-            using (var fileStream = File.Create(@"Recived\received.png"))
+            using (var fileStream = File.Create(@"Recived\recived.png"))
             {
                 int dataPacket = 0;
                 Console.WriteLine("New incoming data");
@@ -19,7 +19,6 @@ namespace ImageTransferServer
                     await fileStream.WriteAsync(imageData.Data.ToByteArray());
                     Console.WriteLine("Data packet recived: " + dataPacket);
                     dataPacket++;
-                    Thread.Sleep(10);
                 }
             }
 
@@ -28,9 +27,9 @@ namespace ImageTransferServer
 
         public override async Task TransferToClient(Empty request, IServerStreamWriter<ImageTransferData> responseStream, ServerCallContext context)
         {
-            using (var fileStream = File.OpenRead(@"Recived\received.png"))
+            using (var fileStream = File.OpenRead(@"Recived\recived.png"))
             {
-                byte[] buffer = new byte[1024];
+                byte[] buffer = new byte[2048];
                 int dataAmount;
                 int dataPacket = 0;
 
@@ -43,7 +42,6 @@ namespace ImageTransferServer
                     await responseStream.WriteAsync(imageData);
                     Console.WriteLine("Data packet sended: " + dataPacket);
                     dataPacket++;
-                    Thread.Sleep(10);
                 }
             }
         }

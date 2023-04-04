@@ -2,7 +2,7 @@ using Grpc.Core;
 using Grpc.Net.Client;
 using ImageTransferClient;
 
-using var channel = GrpcChannel.ForAddress("http://10.8.0.7:5097");
+using var channel = GrpcChannel.ForAddress("http://10.8.0.6:5097");
 var client = new ImageTransferService.ImageTransferServiceClient(channel);
 Boolean exit = false;
 MyData.info();
@@ -17,7 +17,7 @@ while (!exit)
 
     string menuChoise = Console.ReadLine();
 
-    Console.WriteLine("Podaj pe³n¹ œcie¿kê do pliku");
+    Console.WriteLine("\nPodaj pe³n¹ œcie¿kê do pliku");
     string filepath = Console.ReadLine();
 
     switch (menuChoise)
@@ -28,7 +28,7 @@ while (!exit)
                 using (var fileStream = File.OpenRead(filepath))
                 {
                     int dataPacket = 0;
-                    Console.WriteLine("New outgoing data");
+                    Console.WriteLine("\nNew outgoing data");
                     using (var call = client.TransferToServer())
                     {
                         byte[] buffer = new byte[1024];
@@ -36,13 +36,15 @@ while (!exit)
                         while ((dataAmount = await fileStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
                         {
                             await call.RequestStream.WriteAsync(new ImageTransferData { Data = Google.Protobuf.ByteString.CopyFrom(buffer, 0, dataAmount) });
+                            Console.WriteLine("Data packet sended: " + dataPacket);
+                            dataPacket++;
+
                         }
-                        Console.WriteLine("Data packet sended: " + dataPacket);
                         await call.RequestStream.CompleteAsync();
                         await call.ResponseAsync;
                     }
                 }
-                Console.WriteLine("Wys³ano");
+                Console.WriteLine("Wys³ano\n");
             }
             catch (FileNotFoundException ex)
             {
@@ -57,8 +59,9 @@ while (!exit)
                 {
                     using (var fileStream = File.Create(filepath))
                     {
+
                         int dataPacket = 0;
-                        Console.WriteLine("New incoming data");
+                        Console.WriteLine("\nNew incoming data");
                         while (await call.ResponseStream.MoveNext())
                         {
                             ImageTransferData imageData = call.ResponseStream.Current;
@@ -67,7 +70,7 @@ while (!exit)
                             dataPacket++;
                         }
                     }
-                    Console.WriteLine("Odebrano");
+                    Console.WriteLine("Odebrano\n");
                 }
                 catch (FileNotFoundException ex)
                 {
