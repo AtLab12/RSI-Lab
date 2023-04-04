@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "ImageTransferClient";
+
+package greet;
+
+service ImageTransferService {
+  rpc TransferToServer(stream ImageTransferData) returns (google.protobuf.Empty) {}
+  rpc TransferToClient(google.protobuf.Empty) returns (stream ImageTransferData) {}
+}
+
+message ImageTransferData {
+  bytes data = 1;
+}

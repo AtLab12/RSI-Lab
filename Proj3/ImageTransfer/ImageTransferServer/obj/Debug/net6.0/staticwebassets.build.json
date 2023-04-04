@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KJk5oCRe7dtqZuWjOhpo1RBNEiW+JESGG8VFErBFyw4=",
+  "Source": "ImageTransferServer",
+  "BasePath": "_content/ImageTransferServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
