@@ -2,7 +2,7 @@ using Grpc.Core;
 using Grpc.Net.Client;
 using ImageTransferClient;
 
-using var channel = GrpcChannel.ForAddress("https://localhost:7037");
+using var channel = GrpcChannel.ForAddress("http://10.8.0.7:5097");
 var client = new ImageTransferService.ImageTransferServiceClient(channel);
 Boolean exit = false;
 MyData.info();
@@ -27,14 +27,17 @@ while (!exit)
             {
                 using (var fileStream = File.OpenRead(filepath))
                 {
+                    int dataPacket = 0;
+                    Console.WriteLine("New outgoing data");
                     using (var call = client.TransferToServer())
                     {
                         byte[] buffer = new byte[1024];
-                        int bytesRead;
-                        while ((bytesRead = await fileStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+                        int dataAmount;
+                        while ((dataAmount = await fileStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
                         {
-                            await call.RequestStream.WriteAsync(new ImageTransferData { Data = Google.Protobuf.ByteString.CopyFrom(buffer, 0, bytesRead) });
+                            await call.RequestStream.WriteAsync(new ImageTransferData { Data = Google.Protobuf.ByteString.CopyFrom(buffer, 0, dataAmount) });
                         }
+                        Console.WriteLine("Data packet sended: " + dataPacket);
                         await call.RequestStream.CompleteAsync();
                         await call.ResponseAsync;
                     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZXw7H4c4JB52KqxosFKwFCx5xZ/+mxuqOTOYGAt9qiVxNZ/DOmjm8Y+h8QGto0lOZQw3/jrCyJwhWQvVjDN6VA==",
+  "dgSpecHash": "OtF3JqzuJ+GotEysiL6pfHYl8IwaoiyHmtMFuMxuPAUMQHUPw2DW7B3qd6z9x4nzgK2GFjKQxOtLaNommW3Ybw==",
   "success": true,
-  "projectFilePath": "C:\\RSI\\lab5\\ImageTransfer\\ImageTransferClient\\ImageTransferClient.csproj",
+  "projectFilePath": "C:\\RSI-Lab\\Proj3\\ImageTransfer\\ImageTransferClient\\ImageTransferClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomik\\.nuget\\packages\\google.protobuf\\3.18.0\\google.protobuf.3.18.0.nupkg.sha512",
     "C:\\Users\\tomik\\.nuget\\packages\\grpc.aspnetcore\\2.40.0\\grpc.aspnetcore.2.40.0.nupkg.sha512",

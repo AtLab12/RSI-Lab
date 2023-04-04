@@ -31,15 +31,15 @@ namespace ImageTransferServer
             using (var fileStream = File.OpenRead(@"Recived\received.png"))
             {
                 byte[] buffer = new byte[1024];
-                int bytesRead;
+                int dataAmount;
                 int dataPacket = 0;
 
                 Console.WriteLine("New outgoing data");
 
 
-                while ((bytesRead = await fileStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+                while ((dataAmount = await fileStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
                 {
-                    var imageData = new ImageTransferData { Data = ByteString.CopyFrom(buffer, 0, bytesRead) };
+                    var imageData = new ImageTransferData { Data = ByteString.CopyFrom(buffer, 0, dataAmount) };
                     await responseStream.WriteAsync(imageData);
                     Console.WriteLine("Data packet sended: " + dataPacket);
                     dataPacket++;
