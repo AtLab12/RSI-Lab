@@ -9,6 +9,7 @@ import static java.lang.System.exit;
 
 public class ServiceHost {
     public static void main(String[] args) {
+        MyData.info();
         System.out.println("Web Service PersonService is running ...");
         PersonServiceImpl psi = new PersonServiceImpl();
         Endpoint.publish("http://10.8.0.7:8081/personservice", psi);

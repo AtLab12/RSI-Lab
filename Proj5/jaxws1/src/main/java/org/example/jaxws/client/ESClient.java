@@ -14,6 +14,7 @@ public class ESClient {
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
+        MyData.info();
         PersonService_Service pService = new PersonService_Service();
         PersonService pServiceProxy = pService.getPersonServiceImplPort();
         ((BindingProvider) pServiceProxy).getRequestContext().put(BindingProviderProperties.REQUEST_TIMEOUT, 1000);
