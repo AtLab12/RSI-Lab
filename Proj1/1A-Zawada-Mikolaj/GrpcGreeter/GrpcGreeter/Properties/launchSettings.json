@@ -2,7 +2,7 @@
   "profiles": {
     "GrpcGreeter": {
       "commandName": "Project",
-      "applicationUrl": "http://localhost:5097;https://localhost:7042",
+      "applicationUrl": "http://10.8.0.4:5097;https://10.8.0.4:7042",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

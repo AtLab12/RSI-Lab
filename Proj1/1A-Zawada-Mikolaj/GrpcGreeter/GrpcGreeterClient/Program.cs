@@ -4,7 +4,7 @@ using GrpcGreeterClient;
 
 GrpcGreeterClient.MyData.info();
 
-using var channel = GrpcChannel.ForAddress("http://localhost:5097");
+using var channel = GrpcChannel.ForAddress("http://10.8.0.4:5097");
 var client = new Greeter.GreeterClient(channel);
 Console.WriteLine("Jak masz na imię?");
 var reply = await client.SayHelloAsync(

@@ -6,7 +6,7 @@ using Grpc.Net.Client;
 GPSDistanceClient.MyData.info();
 
 // The port number must match the port of the gRPC server.
-using var channel = GrpcChannel.ForAddress("http://localhost:5097");
+using var channel = GrpcChannel.ForAddress("http://10.8.0.4:5097");
 var client = new Distancer.DistancerClient(channel);
 
 while (true)

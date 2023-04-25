@@ -236,10 +236,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_ICalculator" contract="ServiceReference1.ICalculator" bindingType="basicHttpBinding" address="http://10.8.0.6:8080/ServiceBaseName/endpoint1" bindingConfiguration="BasicHttpBinding_ICalculator">
+    <endpoint name="BasicHttpBinding_ICalculator" contract="ServiceReference1.ICalculator" bindingType="basicHttpBinding" address="http://10.8.0.2:8080/ServiceBaseName/endpoint1" bindingConfiguration="BasicHttpBinding_ICalculator">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://10.8.0.6:8080/ServiceBaseName/endpoint1</serializedValue>
+          <serializedValue>http://10.8.0.2:8080/ServiceBaseName/endpoint1</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -321,10 +321,10 @@
         </property>
       </properties>
     </endpoint>
-    <endpoint name="WSHttpBinding_ICalculator" contract="ServiceReference1.ICalculator" bindingType="wsHttpBinding" address="http://10.8.0.6:8080/ServiceBaseName/endpoint2" bindingConfiguration="WSHttpBinding_ICalculator">
+    <endpoint name="WSHttpBinding_ICalculator" contract="ServiceReference1.ICalculator" bindingType="wsHttpBinding" address="http://10.8.0.2:8080/ServiceBaseName/endpoint2" bindingConfiguration="WSHttpBinding_ICalculator">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://10.8.0.6:8080/ServiceBaseName/endpoint2</serializedValue>
+          <serializedValue>http://10.8.0.2:8080/ServiceBaseName/endpoint2</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

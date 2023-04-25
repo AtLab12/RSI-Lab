@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenLocalhost(5097, o => o.Protocols =
+    options.ListenAnyIP(5097, o => o.Protocols =
         HttpProtocols.Http2);
 });
 

@@ -11,7 +11,7 @@ public class ServiceHost {
     public static void main(String[] args) {
         System.out.println("Web Service PersonService is running ...");
         PersonServiceImpl psi = new PersonServiceImpl();
-        Endpoint.publish("http://10.8.0.7:8081/personservice", psi);
+        Endpoint.publish("http://localhost:8081/personservice", psi);
         System.out.println("Press ENTER to STOP PersonService ...");
         try {
             System.in.read();

@@ -15,7 +15,7 @@ namespace WcfServiceHost
         static void Main(string[] args)
         {
             MyData.info();
-            Uri baseAddress = new Uri("http://10.8.0.6:8080/ServiceBaseName");
+            Uri baseAddress = new Uri("http://10.8.0.2:8080/ServiceBaseName");
 
             ServiceHost myHost = new ServiceHost(typeof(MyCalculator), baseAddress);
 

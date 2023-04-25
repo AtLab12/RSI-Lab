@@ -76,8 +76,6 @@ public class ESClient {
                 System.out.println("Taki użytkownik już istnieje");
             } catch (PersonNotFoundEx_Exception e) {
                 System.out.println("Nie znaleziono użytkownika");
-            }  catch (jakarta.xml.ws.WebServiceException e) {
-                System.out.println("Przekroczono czas odpowiedzi serwera");
             }
 
             catch (Exception e) {

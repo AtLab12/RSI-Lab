@@ -2,7 +2,7 @@
   "profiles": {
     "GPSDistance": {
       "commandName": "Project",
-      "applicationUrl": "http://localhost:5033;https://localhost:7269",
+      "applicationUrl": "http://10.8.0.4:5033;https://10.8.0.4:7269",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

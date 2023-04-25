@@ -22,3 +22,15 @@ F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.csproj.
 F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CopyComplete
 F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.exe
 F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.pdb
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\bin\Release\WcfServiceHost.exe.config
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\bin\Release\WcfServiceHost.exe
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\bin\Release\WcfServiceHost.pdb
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\bin\Release\WcfService.dll
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\bin\Release\WcfService.pdb
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\bin\Release\WcfService.dll.config
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.AssemblyReference.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.SuggestedBindingRedirects.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CoreCompileInputs.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CopyComplete
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.exe
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.pdb
