@@ -6,3 +6,11 @@ C:\Studia\StudiaSmieci\wcf-lab\WcfClient\obj\Debug\WcfClient.csproj.SuggestedBin
 C:\Studia\StudiaSmieci\wcf-lab\WcfClient\obj\Debug\WcfClient.csproj.CoreCompileInputs.cache
 C:\Studia\StudiaSmieci\wcf-lab\WcfClient\obj\Debug\WcfClient.exe
 C:\Studia\StudiaSmieci\wcf-lab\WcfClient\obj\Debug\WcfClient.pdb
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\bin\Debug\WcfClient.exe.config
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\bin\Debug\WcfClient.exe
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\bin\Debug\WcfClient.pdb
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\obj\Debug\WcfClient.csproj.AssemblyReference.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\obj\Debug\WcfClient.csproj.SuggestedBindingRedirects.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\obj\Debug\WcfClient.csproj.CoreCompileInputs.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\obj\Debug\WcfClient.exe
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfClient\obj\Debug\WcfClient.pdb

@@ -20,7 +20,7 @@ namespace WcfClient
             Uri baseAddress;
 
             BasicHttpBinding myBinding = new BasicHttpBinding();
-            baseAddress = new Uri("http://localhost:8080/ServiceBaseName/endpoint1");
+            baseAddress = new Uri("http://10.8.0.6:8080/ServiceBaseName/endpoint1");
 
             EndpointAddress eAddress = new EndpointAddress(baseAddress);
 

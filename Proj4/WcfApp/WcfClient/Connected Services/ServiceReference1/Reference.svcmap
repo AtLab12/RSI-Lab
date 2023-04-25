@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/ServiceBaseName" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://10.8.0.6:8080/ServiceBaseName" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceBaseName.disco" MetadataType="Disco" ID="48a2976b-aef2-4356-958e-0854d0bb863b" SourceId="1" SourceUrl="http://localhost:8080/ServiceBaseName?disco" />
-    <MetadataFile FileName="MyCalculator.wsdl" MetadataType="Wsdl" ID="127e29a1-7b1d-49aa-adfc-0c410e34ff5a" SourceId="1" SourceUrl="http://localhost:8080/ServiceBaseName?wsdl" />
-    <MetadataFile FileName="ServiceBaseName.xsd" MetadataType="Schema" ID="c6e11557-ff6b-4a0b-9881-aeb6f49fd161" SourceId="1" SourceUrl="http://localhost:8080/ServiceBaseName?xsd=xsd0" />
-    <MetadataFile FileName="ServiceBaseName1.xsd" MetadataType="Schema" ID="11fa2e58-bb2e-4f6d-a906-55cb472b67e4" SourceId="1" SourceUrl="http://localhost:8080/ServiceBaseName?xsd=xsd1" />
+    <MetadataFile FileName="ServiceBaseName.disco" MetadataType="Disco" ID="48a2976b-aef2-4356-958e-0854d0bb863b" SourceId="1" SourceUrl="http://10.8.0.6:8080/ServiceBaseName?disco" />
+    <MetadataFile FileName="MyCalculator.wsdl" MetadataType="Wsdl" ID="127e29a1-7b1d-49aa-adfc-0c410e34ff5a" SourceId="1" SourceUrl="http://10.8.0.6:8080/ServiceBaseName?wsdl" />
+    <MetadataFile FileName="ServiceBaseName.xsd" MetadataType="Schema" ID="c6e11557-ff6b-4a0b-9881-aeb6f49fd161" SourceId="1" SourceUrl="http://10.8.0.6:8080/ServiceBaseName?xsd=xsd0" />
+    <MetadataFile FileName="ServiceBaseName1.xsd" MetadataType="Schema" ID="11fa2e58-bb2e-4f6d-a906-55cb472b67e4" SourceId="1" SourceUrl="http://10.8.0.6:8080/ServiceBaseName?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -246,7 +246,7 @@
     </binding>
     <service name="PersonService">
         <port name="PersonServiceImplPort" binding="tns:PersonServiceImplPortBinding">
-            <soap:address location="http://localhost:8081/personservice"/>
+            <soap:address location="http://10.8.0.7:8081/personservice"/>
         </port>
     </service>
 </definitions>

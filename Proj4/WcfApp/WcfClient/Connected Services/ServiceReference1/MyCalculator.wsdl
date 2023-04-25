@@ -9,8 +9,8 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://localhost:8080/ServiceBaseName?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://localhost:8080/ServiceBaseName?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.8.0.6:8080/ServiceBaseName?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.8.0.6:8080/ServiceBaseName?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ICalculator_Add_InputMessage">
@@ -360,12 +360,12 @@
   </wsdl:binding>
   <wsdl:service name="MyCalculator">
     <wsdl:port name="BasicHttpBinding_ICalculator" binding="tns:BasicHttpBinding_ICalculator">
-      <soap:address location="http://localhost:8080/ServiceBaseName/endpoint1" />
+      <soap:address location="http://10.8.0.6:8080/ServiceBaseName/endpoint1" />
     </wsdl:port>
     <wsdl:port name="WSHttpBinding_ICalculator" binding="tns:WSHttpBinding_ICalculator">
-      <soap12:address location="http://localhost:8080/ServiceBaseName/endpoint2" />
+      <soap12:address location="http://10.8.0.6:8080/ServiceBaseName/endpoint2" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:8080/ServiceBaseName/endpoint2</wsa10:Address>
+        <wsa10:Address>http://10.8.0.6:8080/ServiceBaseName/endpoint2</wsa10:Address>
       </wsa10:EndpointReference>
     </wsdl:port>
   </wsdl:service>
