@@ -1,0 +1,7 @@
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\bin\Debug\WcfService.dll.config
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\bin\Debug\WcfService.dll
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\bin\Debug\WcfService.pdb
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\obj\Debug\WcfService.dll
+C:\Studia\RSI-Lab\Proj4\WcfApp\WcfService\obj\Debug\WcfService.pdb
