@@ -1,11 +1,14 @@
 
 package org.example.jaxws.server_topdown;
 
-import jakarta.xml.ws.*;
-
-import javax.xml.namespace.QName;
 import java.net.MalformedURLException;
 import java.net.URL;
+import javax.xml.namespace.QName;
+import jakarta.xml.ws.Service;
+import jakarta.xml.ws.WebEndpoint;
+import jakarta.xml.ws.WebServiceClient;
+import jakarta.xml.ws.WebServiceException;
+import jakarta.xml.ws.WebServiceFeature;
 
 
 /**
@@ -14,7 +17,7 @@ import java.net.URL;
  * Generated source version: 3.0
  * 
  */
-@WebServiceClient(name = "PersonService", targetNamespace = "http://server.jaxws.example.org/", wsdlLocation = "file:/home/pawelk/RSI/Rsi-lab-8/src/main/resources/personservice.wsdl")
+@WebServiceClient(name = "PersonService", targetNamespace = "http://server.jaxws.example.org/", wsdlLocation = "file:/C:/Studia/RSI-Lab/Proj5/jaxws1/src/main/resources/personservice.wsdl")
 public class PersonService_Service
     extends Service
 {
@@ -27,7 +30,7 @@ public class PersonService_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:C:\\Studia\\RSI-Lab\\Proj5\\jaxws1\\src\\main\\resources\\personservice.wsdl");
+            url = new URL("file:/C:/Studia/RSI-Lab/Proj5/jaxws1/src/main/resources/personservice.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -72,7 +75,7 @@ public class PersonService_Service
     /**
      * 
      * @param features
-     *     A list of {@link WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
+     *     A list of {@link jakarta.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
      * @return
      *     returns PersonService
      */

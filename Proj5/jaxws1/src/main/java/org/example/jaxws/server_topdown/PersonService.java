@@ -100,8 +100,8 @@ public interface PersonService {
      * @param arg0
      * @return
      *     returns org.example.jaxws.server_topdown.Person
-     * @throws PersonNotFoundEx_Exception
      * @throws PersonExistsEx_Exception
+     * @throws PersonNotFoundEx_Exception
      */
     @WebMethod
     @WebResult(targetNamespace = "")
@@ -114,7 +114,7 @@ public interface PersonService {
         String arg1,
         @WebParam(name = "arg2", targetNamespace = "")
         int arg2)
-        throws PersonNotFoundEx_Exception
+        throws PersonExistsEx_Exception, PersonNotFoundEx_Exception
     ;
 
     /**

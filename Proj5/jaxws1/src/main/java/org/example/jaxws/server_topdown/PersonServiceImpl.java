@@ -17,30 +17,31 @@ public class PersonServiceImpl implements PersonService {
     private final PersonRepository dataRepository = new PersonRepositoryImpl();
 
     @WebMethod
-    public org.example.jaxws.server.Person getPerson(int id) throws org.example.jaxws.server.PersonNotFoundEx {
+    public Person getPerson(int id) throws PersonNotFoundEx {
         System.out.println("...called getPerson id=" + id);
         return dataRepository.getPerson(id);
     }
 
     @WebMethod
-    public ArrayList<org.example.jaxws.server.Person> getAllPersons() {
+    public ArrayList<Person> getAllPersons() {
         System.out.println("...called getAllPersons");
-        System.out.println("ide spac");
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        if(countPersons()>3){
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         return dataRepository.getAllPersons();
     }
 
     @WebMethod
-    public org.example.jaxws.server.Person addPerson(int id, String name, int age) throws PersonExistsEx {
+    public Person addPerson(int id, String name, int age) throws PersonExistsEx {
         return dataRepository.addPerson(id, name, age);
     }
 
     @WebMethod
-    public boolean deletePerson(int id) throws org.example.jaxws.server.PersonNotFoundEx {
+    public boolean deletePerson(int id) throws PersonNotFoundEx {
         return dataRepository.deletePerson(id);
     }
 

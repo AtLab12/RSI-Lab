@@ -7,12 +7,12 @@ import org.example.jaxws.server.PersonNotFoundEx;
 import java.util.ArrayList;
 
 public interface PersonRepository {
-    ArrayList<org.example.jaxws.server.Person> getAllPersons();
+    ArrayList<Person> getAllPersons();
 
-    org.example.jaxws.server.Person getPerson(int id) throws org.example.jaxws.server.PersonNotFoundEx;
+    Person getPerson(int id) throws PersonNotFoundEx;
 
-    org.example.jaxws.server.Person updatePerson(int id, String name, int age) throws
-            org.example.jaxws.server.PersonNotFoundEx;
+    Person updatePerson(int id, String name, int age) throws
+            PersonNotFoundEx;
 
     boolean deletePerson(int id) throws PersonNotFoundEx;
 

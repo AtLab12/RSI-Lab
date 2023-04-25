@@ -1,4 +1,4 @@
-package org.example.jaxws.server_topdown2;
+package org.example.jaxws.server_topdown;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;

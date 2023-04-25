@@ -39,7 +39,7 @@
                             ${project.basedir}/src/main/resources/personservice.wsdl
                         </wsdlFile>
                     </wsdlFiles>
-                    <packageName>org.example.jaxws.server_topdown2</packageName>
+                    <packageName>org.example.jaxws.server_topdown</packageName>
                     <sourceDestDir>${project.basedir}/src/main/java/</sourceDestDir>
                 </configuration>
             </plugin>
