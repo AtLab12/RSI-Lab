@@ -25,6 +25,12 @@ public class PersonServiceImpl implements PersonService {
     @WebMethod
     public ArrayList<org.example.jaxws.server.Person> getAllPersons() {
         System.out.println("...called getAllPersons");
+        System.out.println("ide spac");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return dataRepository.getAllPersons();
     }
 

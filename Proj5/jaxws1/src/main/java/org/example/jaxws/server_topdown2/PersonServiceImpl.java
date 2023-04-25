@@ -25,6 +25,13 @@ public class PersonServiceImpl implements PersonService {
     @WebMethod
     public ArrayList<Person> getAllPersons() {
         System.out.println("...called getAllPersons");
+        if(countPersons()>3){
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         return dataRepository.getAllPersons();
     }
 
