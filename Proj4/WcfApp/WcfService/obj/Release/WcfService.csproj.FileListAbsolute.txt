@@ -1,0 +1,14 @@
+F:\STUDIA\GIT\WcfApp\WcfService\bin\Release\WcfService.dll.config
+F:\STUDIA\GIT\WcfApp\WcfService\bin\Release\WcfService.dll
+F:\STUDIA\GIT\WcfApp\WcfService\bin\Release\WcfService.pdb
+F:\STUDIA\GIT\WcfApp\WcfService\obj\Release\WcfService.csproj.AssemblyReference.cache
+F:\STUDIA\GIT\WcfApp\WcfService\obj\Release\WcfService.csproj.CoreCompileInputs.cache
+F:\STUDIA\GIT\WcfApp\WcfService\obj\Release\WcfService.dll
+F:\STUDIA\GIT\WcfApp\WcfService\obj\Release\WcfService.pdb
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\bin\Release\WcfService.dll.config
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\bin\Release\WcfService.dll
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\bin\Release\WcfService.pdb
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\obj\Release\WcfService.csproj.AssemblyReference.cache
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\obj\Release\WcfService.csproj.CoreCompileInputs.cache
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\obj\Release\WcfService.dll
+F:\STUDIA\GIT\WcfApp — kopia\WcfService\obj\Release\WcfService.pdb

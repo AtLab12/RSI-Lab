@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\Wc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceHost", "WcfServiceHost\WcfServiceHost.csproj", "{6D207175-2D2B-4E5A-8EB8-9527E6E4943B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClient", "WcfClient\WcfClient.csproj", "{2F950028-ECED-4C5C-8229-3BC50450B3BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6D207175-2D2B-4E5A-8EB8-9527E6E4943B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D207175-2D2B-4E5A-8EB8-9527E6E4943B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D207175-2D2B-4E5A-8EB8-9527E6E4943B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F950028-ECED-4C5C-8229-3BC50450B3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F950028-ECED-4C5C-8229-3BC50450B3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F950028-ECED-4C5C-8229-3BC50450B3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F950028-ECED-4C5C-8229-3BC50450B3BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

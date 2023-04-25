@@ -1,0 +1,24 @@
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\bin\Release\WcfServiceHost.exe.config
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\bin\Release\WcfServiceHost.exe
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\bin\Release\WcfServiceHost.pdb
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\bin\Release\WcfService.dll
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\bin\Release\WcfService.pdb
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\bin\Release\WcfService.dll.config
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.AssemblyReference.cache
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.SuggestedBindingRedirects.cache
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CoreCompileInputs.cache
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CopyComplete
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.exe
+F:\STUDIA\GIT\WcfApp\WcfServiceHost\obj\Release\WcfServiceHost.pdb
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\bin\Release\WcfServiceHost.exe.config
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\bin\Release\WcfServiceHost.exe
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\bin\Release\WcfServiceHost.pdb
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\bin\Release\WcfService.dll
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\bin\Release\WcfService.pdb
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\bin\Release\WcfService.dll.config
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.csproj.AssemblyReference.cache
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.csproj.SuggestedBindingRedirects.cache
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CoreCompileInputs.cache
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.csproj.CopyComplete
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.exe
+F:\STUDIA\GIT\WcfApp — kopia\WcfServiceHost\obj\Release\WcfServiceHost.pdb
