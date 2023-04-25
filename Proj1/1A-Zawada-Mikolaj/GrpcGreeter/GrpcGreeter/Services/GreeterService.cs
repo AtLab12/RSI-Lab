@@ -13,6 +13,8 @@ public class GreeterService : Greeter.GreeterBase
 
     public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
     {
+        Console.WriteLine("Zalogowany: "+ request.Name);
+
         return Task.FromResult(new HelloReply
         {
             Message = "Witaj " + request.Name + "\r\n" + DateTime.Now.ToString("dd MMMM, HH:mm:ss", new System.Globalization.CultureInfo("pl-PL"))
