@@ -1,0 +1,14 @@
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\bin\MyWebService.dll.config
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\bin\MyWebService.dll
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\bin\MyWebService.pdb
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.AssemblyReference.cache
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.CoreCompileInputs.cache
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\obj\Debug\MyWebService.dll
+C:\Studia\RSI-Lab\Proj5\MyWebService\MyWebService\obj\Debug\MyWebService.pdb
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\bin\MyWebService.dll.config
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\bin\MyWebService.dll
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\bin\MyWebService.pdb
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.AssemblyReference.cache
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Debug\MyWebService.csproj.CoreCompileInputs.cache
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Debug\MyWebService.dll
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Debug\MyWebService.pdb
