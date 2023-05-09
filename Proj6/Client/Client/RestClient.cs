@@ -15,11 +15,11 @@ using System.Xml.Linq;
 
 namespace Client
 {
-    public class MyRestClient
+    public class RestClient
     {
-        private static readonly string ADDRESS = "http://localhost:55701/Service1.svc/";
+        private static readonly string ADDRESS = "http://10.8.0.7:8080/Service1.svc/";
 
-        public void processRequest(string endpoint, string method, string type)
+        public void request(string endpoint, string method, string type)
         {
             try
             {
@@ -28,33 +28,32 @@ namespace Client
                 req.Method = method;
                 req.ContentType = type;
 
-                string payload = "";
+                string sendData = "";
                 if (method == "POST" || method == "PUT")
                 {
                     if (type == "text/xml")
                     {
-                        payload = getXmlPerson();
+                        sendData = readPersonXml();
                     }
                     else
                     {
-                        payload = getJsonPerson();
+                        sendData = readPersonJson();
                     }
                 }
 
                 switch (method)
                 {
-
                     case "GET":
                         break;
                     case "POST":
-                        byte[] buforPost = Encoding.UTF8.GetBytes(payload);
+                        byte[] buforPost = Encoding.UTF8.GetBytes(sendData);
                         req.ContentLength = buforPost.Length;
                         Stream postData = req.GetRequestStream();
                         postData.Write(buforPost, 0, buforPost.Length);
                         postData.Close();
                         break;
                     case "PUT":
-                        byte[] buforPut = Encoding.UTF8.GetBytes(payload);
+                        byte[] buforPut = Encoding.UTF8.GetBytes(sendData);
                         req.ContentLength = buforPut.Length;
                         Stream putData = req.GetRequestStream();
                         putData.Write(buforPut, 0, buforPut.Length);
@@ -116,6 +115,7 @@ namespace Client
             return result;
         }
 
+
         private static string FormatXml(string xmlString)
         {
             XmlDocument doc = new XmlDocument();
@@ -163,35 +163,35 @@ namespace Client
             });
         }
 
-        public static String getXmlPerson()
+        public static String readPersonXml()
         {
             StringBuilder builder = new StringBuilder("<Person xmlns=\"http://schemas.datacontract.org/2004/07/MyWebService\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\">");
             builder.Append("<id>" + 0 + "</id>");
-            Console.Write("Podaj imię i nazwisko osoby: ");
+            Console.Write("Podaj imię: ");
             builder.Append("<name>" + Console.ReadLine() + "</name>");
-            Console.Write("Podaj wiek osoby: ");
+            Console.Write("Podaj wiek: ");
             builder.Append("<age>" + int.Parse(Console.ReadLine()) + "</age>");
             Console.Write("Podaj email: ");
             builder.Append("<email>" + Console.ReadLine() + "</email>");
             builder.Append("</Person>");
 
-            Console.WriteLine(builder.ToString());
+            Console.WriteLine("Wysłane dane: "+builder.ToString());
 
             return builder.ToString();
         }
 
-        public static String getJsonPerson()
+        public static String readPersonJson()
         {
             StringBuilder builder = new StringBuilder();
-            Console.Write("Podaj imię i nazwisko osoby: ");
+            Console.Write("Podaj imię: ");
             string name = Console.ReadLine();
-            Console.Write("Podaj wiek osoby: ");
+            Console.Write("Podaj wiek: ");
             int age = int.Parse(Console.ReadLine());
             Console.Write("Podaj email: ");
             string email = Console.ReadLine();
 
             builder.AppendFormat("{{\"id\":0,\"name\":\"{0}\",\"age\":{1},\"email\":\"{2}\"}}", name, age, email);
-            Console.WriteLine(builder.ToString());
+            Console.WriteLine("Wysłane dane: " + builder.ToString());
 
             return builder.ToString();
         }

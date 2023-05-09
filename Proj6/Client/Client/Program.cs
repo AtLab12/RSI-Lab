@@ -10,14 +10,9 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            string xmlType = "text/xml";
-            string jsonType = "application/json";
-            string get = "GET";
-            string post = "POST";
-            string put = "PUT";
-            string delete = "DELETE";
+            MyData.info();
 
-            MyRestClient client = new MyRestClient();
+            RestClient client = new RestClient();
 
             int input = -1;
             bool EXIT = false;
@@ -63,82 +58,82 @@ namespace Client
                         break;
                     case 1:
                         endpoint = "xml/People";
-                        method = get;
-                        type = xmlType;
+                        method = "GET";
+                        type = "text/xml";
                         break;
                     case 2:
-                        Console.Write("Podaj indeks osoby: ");
+                        Console.Write("Podaj indeks: ");
                         int getId = int.Parse(Console.ReadLine());
                         endpoint = $"xml/People/{getId}";
-                        method = get;
-                        type = xmlType;
+                        method = "GET";
+                        type = "text/xml";
                         break;
                     case 3:
                         endpoint = "xml/People";
-                        method = post;
-                        type = xmlType;
+                        method = "POST";
+                        type = "text/xml";
                         break;
                     case 4:
-                        Console.Write("Podaj indeks osoby: ");
+                        Console.Write("Podaj indeks: ");
                         int delId = int.Parse(Console.ReadLine());
                         endpoint = $"xml/People{delId}";
-                        method = delete;
-                        type = xmlType;
+                        method = "DELETE";
+                        type = "text/xml";
                         break;
                     case 5:
-                        Console.Write("Podaj indeks osoby: ");
+                        Console.Write("Podaj indeks: ");
                         int editId = int.Parse(Console.ReadLine());
                         endpoint = $"xml/People{editId}";
-                        method = put;
-                        type = xmlType;
+                        method = "PUT";
+                        type = "text/xml";
                         break;
                     case 6:
                         endpoint = "xml/People/count";
-                        method = get;
-                        type = xmlType;
+                        method = "GET";
+                        type = "text/xml";
                         break;
                     case 7:
                         endpoint = "json/People";
-                        method = get;
-                        type = jsonType;
+                        method = "GET";
+                        type = "application/json";
                         break;
                     case 8:
-                        Console.Write("Podaj indeks osoby: ");
+                        Console.Write("Podaj indeks: ");
                         int getIdJson = int.Parse(Console.ReadLine());
                         endpoint = $"json/People/{getIdJson}";
-                        method = get;
-                        type = jsonType;
+                        method = "GET";
+                        type = "application/json";
                         break;
                     case 9:
                         endpoint = "json/People";
-                        method = post;
-                        type = jsonType;
+                        method = "POST";
+                        type = "application/json";
                         break;
                     case 10:
-                        Console.Write("Podaj indeks osoby: ");
+                        Console.Write("Podaj indeks: ");
                         int delIdJson = int.Parse(Console.ReadLine());
                         endpoint = $"json/People{delIdJson}";
-                        method = delete;
-                        type = jsonType;
+                        method = "DELETE";
+                        type = "application/json";
                         break;
                     case 11:
-                        Console.Write("Podaj indeks osoby: ");
+                        Console.Write("Podaj indeks: ");
                         int editIdJson = int.Parse(Console.ReadLine());
                         endpoint = $"json/People{editIdJson}";
-                        method = put;
-                        type = jsonType;
+                        method = "PUT";
+                        type = "application/json";
                         break;
                     case 12:
                         endpoint = "json/People/count";
-                        method = get;
-                        type = jsonType;
+                        method = "GET";
+                        type = "application/json";
                         break;
                     default:
                         EXIT = true;
                         break;
                 }
 
-                client.processRequest(endpoint, method, type);
+                client.request(endpoint, method, type);
             }
 
 
