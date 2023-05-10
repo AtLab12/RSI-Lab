@@ -19,19 +19,19 @@ namespace Client
 
             while (!EXIT)
             {
-                Console.WriteLine("Menu:");
+                Console.WriteLine("\n\nMenu:");
                 Console.WriteLine("1: Wypisz wszystkich (XML)");
                 Console.WriteLine("2: Wypisz jedną osobę (XML)");
                 Console.WriteLine("3: Dodaj nową osobę (XML)");
                 Console.WriteLine("4: Usuń osobę (XML)");
                 Console.WriteLine("5: Edytuj osobę (XML)");
                 Console.WriteLine("6: Liczba ludzi w bazie (XML)");
-                Console.WriteLine("7: Wypisz wszystkich (XML)");
-                Console.WriteLine("8: Wypisz jedną osobę (XML)");
-                Console.WriteLine("9: Dodaj nową osobę (XML)");
-                Console.WriteLine("10: Usuń osobę (XML)");
-                Console.WriteLine("11: Edytuj osobę (XML)");
-                Console.WriteLine("12: Liczba ludzi w bazie (XML)");
+                Console.WriteLine("7: Wypisz wszystkich (JSON)");
+                Console.WriteLine("8: Wypisz jedną osobę (JSON)");
+                Console.WriteLine("9: Dodaj nową osobę (JSON)");
+                Console.WriteLine("10: Usuń osobę (JSON)");
+                Console.WriteLine("11: Edytuj osobę (JSON)");
+                Console.WriteLine("12: Liczba ludzi w bazie (JSON)");
                 Console.WriteLine("Inny przycisk: wyjście");
 
                 try

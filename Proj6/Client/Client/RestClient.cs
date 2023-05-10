@@ -17,7 +17,7 @@ namespace Client
 {
     public class RestClient
     {
-        private static readonly string ADDRESS = "http://10.8.0.7:8080/Service1.svc/";
+        private static readonly string ADDRESS = "http://192.168.100.10:10000/Service1.svc/";
 
         public void request(string endpoint, string method, string type)
         {
@@ -146,7 +146,7 @@ namespace Client
             foreach (XmlNode personNode in personNodes)
             {
 
-                Console.Write("Osoba " + personNode.ChildNodes[0].InnerText);
+                Console.Write("\nOsoba " + personNode.ChildNodes[0].InnerText);
                 Console.Write(": " + personNode.ChildNodes[1].InnerText);
                 Console.Write(", " + personNode.ChildNodes[2].InnerText);
                 Console.WriteLine(", " + personNode.ChildNodes[3].InnerText);
