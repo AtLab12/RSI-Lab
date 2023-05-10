@@ -17,7 +17,7 @@ namespace Client
 {
     public class RestClient
     {
-        private static readonly string ADDRESS = "http://192.168.100.10:10000/Service1.svc/";
+        private static readonly string ADDRESS = "http://localhost:10000/Service1.svc/";
 
         public void request(string endpoint, string method, string type)
         {
