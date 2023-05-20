@@ -35,6 +35,7 @@ namespace MyWebService
             if (index == -1){
                 throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
             }
+
             return people.ElementAt(index);
         }
 
@@ -62,7 +63,8 @@ namespace MyWebService
             }
             person.id = maxId+1;
             people.Add(person);
-
+            WebOperationContext ctx = WebOperationContext.Current;
+            ctx.OutgoingResponse.StatusCode = HttpStatusCode.Created;
             return "Added person: " + person.id + ", " + person.name + ", " + person.age + ", " + person.email;
         }
 
@@ -141,6 +143,8 @@ namespace MyWebService
             }
             person.id = maxId + 1;
             people.Add(person);
+            WebOperationContext ctx = WebOperationContext.Current;
+            ctx.OutgoingResponse.StatusCode = HttpStatusCode.Created;
             return "Added person: " + person.id + ", " + person.name + ", " + person.age + ", " + person.email;
         }
 
