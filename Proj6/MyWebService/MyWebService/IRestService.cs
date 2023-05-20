@@ -27,7 +27,7 @@ namespace MyWebService
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/xml/People", Method = "POST", RequestFormat = WebMessageFormat.Xml)]
-        HttpResponseMessage addXml(Person item);
+        string addXml(Person item);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/xml/People{id}", Method = "DELETE")]
@@ -66,9 +66,8 @@ namespace MyWebService
         string updateJson(string Id, Person person);
 
         [OperationContract]
-        [WebGet(UriTemplate = "/json/People/count")]
+        [WebGet(UriTemplate = "/json/People/count", ResponseFormat = WebMessageFormat.Json)]
         int getCountJson();
-        // TODO: Add your service operations here
     }
 
 

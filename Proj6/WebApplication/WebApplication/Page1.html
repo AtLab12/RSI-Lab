@@ -1,34 +1,107 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Rest Service Client</title>
+    <title>REST Service Client</title>
+    <style>
+        .myTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .myTable th, .myTable td {
+            border: 1px solid black;
+            padding: 10px;
+         }
+    </style>
+
 </head>
 <body>
-    <h1>Rest Service Client</h1>
+    <h1>REST Service Client</h1>
 
-    <label for="format-select">Select format:</label>
+    <label for="format-select">Wybierz format:</label>
     <select id="format-select">
         <option value="json">JSON</option>
         <option value="xml">XML</option>
     </select>
 
-    <table>
+    <table class="myTable">
         <thead>
             <tr>
-                <th>Operation</th>
-                <th>Result</th>
+                <th>Operacja</th>
+                <th>Wynik</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
-                    <button id="getAllButton">Get All</button>
+                    <button id="getAllButton">Pobierz wszystkich</button>
                 </td>
-                <td id="getAllResult">
-                    <!-- Result will be displayed here -->
+                <td id="getAllResult"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Pobierz osobę o określonym ID:</h3>
+                    <input type="text" id="getIdInput" placeholder="Podaj ID osoby" />
+                    <button id="getIdButton">Pobierz</button>
+                </td>
+                <td>
+                    <pre id="getIdResult"></pre>
                 </td>
             </tr>
-            <!-- More rows for other operations... -->
+            <tr>
+                <td>
+                    <h3>Pobierz osobę o określonym imieniu:</h3>
+                    <input type="text" id="getNameInput" placeholder="Podaj imię osoby" />
+                    <button id="getNameButton">Pobierz</button>
+                </td>
+                <td>
+                    <pre id="getNameResult"></pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Dodaj nową osobę:</h3>
+                    <input type="text" id="addPersonName" placeholder="Podaj imię osoby" />
+                    <input type="number" id="addPersonAge" placeholder="Podaj wiek osoby" />
+                    <input type="text" id="addPersonEmail" placeholder="Podaj email osoby" />
+                    <button id="addPersonButton">Dodaj</button>
+                </td>
+                <td>
+                    <pre id="addPersonResult"></pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Usun osobe:</h3>
+                    <input type="text" id="deletePersonId" placeholder="ID osoby">
+                    <button id="deletePersonButton">Usun</button>
+                </td>
+                <td>
+                    <pre id="deletePersonResult"></pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Edytuj osobe:</h3>
+                    <input type="text" id="editPersonId" placeholder="ID osoby">
+                    <input type="text" id="editPersonName" placeholder="Nowe imie">
+                    <input type="text" id="editPersonAge" placeholder="Nowy wiek">
+                    <input type="text" id="editPersonEmail" placeholder="Nowy email">
+                    <button id="editPersonButton">Edytuj</button>
+                </td>
+                <td>
+                    <pre id="editPersonResult"></pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Liczba osob w bazie:</h3>
+                    <button id="getCountButton">Pobierz liczbe</button>
+                </td>
+                <td>
+                    <p id="getCountResult"></p>
+                </td>
+            </tr>
+
         </tbody>
     </table>
     <script src="Scripts/jquery-3.6.4.min.js"></script>

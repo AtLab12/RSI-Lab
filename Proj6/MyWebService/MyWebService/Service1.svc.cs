@@ -50,7 +50,7 @@ namespace MyWebService
         }
 
 
-        public HttpResponseMessage addXml(Person person){
+        public string addXml(Person person){
             if (person == null){
                 throw new WebFaultException<string>("400: BadRequest", HttpStatusCode.BadRequest);
             }
@@ -63,9 +63,7 @@ namespace MyWebService
             person.id = maxId+1;
             people.Add(person);
 
-            HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.Created);
-            response.Content = new StringContent("Added person: " + person.id + ", " + person.name + ", " + person.age + ", " + person.email);
-            return response;
+            return "Added person: " + person.id + ", " + person.name + ", " + person.age + ", " + person.email;
         }
 
         public string deleteXml(string Id)
