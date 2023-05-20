@@ -7,11 +7,11 @@ using System.Net;
 using System.Reflection;
 using System.Security.Policy;
 using System.Text;
-using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Client
 {
@@ -155,13 +155,10 @@ namespace Client
 
         private static string FormatJson(string jsonString)
         {
-            JsonDocument doc = JsonDocument.Parse(jsonString);
-
-            return JsonSerializer.Serialize(doc, new JsonSerializerOptions
-            {
-                WriteIndented = true
-            });
+            var formatted = JToken.Parse(jsonString).ToString(Newtonsoft.Json.Formatting.Indented);
+            return formatted;
         }
+
 
         public static String readPersonXml()
         {

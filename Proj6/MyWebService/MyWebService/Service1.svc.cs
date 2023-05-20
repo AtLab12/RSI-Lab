@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Security.Cryptography;
 using System.ServiceModel;
@@ -37,7 +38,19 @@ namespace MyWebService
             return people.ElementAt(index);
         }
 
-        public string addXml(Person person){
+        // Pod laby 23.5
+        public List<Person> getByNameXml(string name)
+        {
+            var persons = people.Where(p => p.name == name).ToList();
+            if (persons.Count == 0)
+            {
+                throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
+            }
+            return persons;
+        }
+
+
+        public HttpResponseMessage addXml(Person person){
             if (person == null){
                 throw new WebFaultException<string>("400: BadRequest", HttpStatusCode.BadRequest);
             }
@@ -49,7 +62,10 @@ namespace MyWebService
             }
             person.id = maxId+1;
             people.Add(person);
-            return "Added person: " + person.id + ", " + person.name + ", " + person.age + ", " + person.email;
+
+            HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.Created);
+            response.Content = new StringContent("Added person: " + person.id + ", " + person.name + ", " + person.age + ", " + person.email);
+            return response;
         }
 
         public string deleteXml(string Id)
@@ -98,6 +114,18 @@ namespace MyWebService
             }
             return people.ElementAt(index);
         }
+
+        // pod laby 23.5
+        public List<Person> getByNameJson(string name)
+        {
+            var persons = people.Where(p => p.name == name).ToList();
+            if (persons.Count == 0)
+            {
+                throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
+            }
+            return persons;
+        }
+
 
         public string addJson(Person person)
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
@@ -21,8 +22,12 @@ namespace MyWebService
         Person getByIdXml(string id);
 
         [OperationContract]
+        [WebGet(UriTemplate = "/xml/People/ByName/{name}", ResponseFormat = WebMessageFormat.Xml)]
+        List<Person> getByNameXml(string name);
+
+        [OperationContract]
         [WebInvoke(UriTemplate = "/xml/People", Method = "POST", RequestFormat = WebMessageFormat.Xml)]
-        string addXml(Person item);
+        HttpResponseMessage addXml(Person item);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/xml/People{id}", Method = "DELETE")]
@@ -43,6 +48,10 @@ namespace MyWebService
         [OperationContract]
         [WebGet(UriTemplate = "/json/People/{id}", ResponseFormat = WebMessageFormat.Json)]
         Person getByIdJson(string Id);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/json/People/ByName/{name}", ResponseFormat = WebMessageFormat.Json)]
+        List<Person> getByNameJson(string name);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "/json/People", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
