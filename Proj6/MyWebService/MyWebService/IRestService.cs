@@ -68,6 +68,14 @@ namespace MyWebService
         [OperationContract]
         [WebGet(UriTemplate = "/json/People/count", ResponseFormat = WebMessageFormat.Json)]
         int getCountJson();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/json/authors", ResponseFormat = WebMessageFormat.Json)]
+        string getAuthorsJson();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/xml/authors", ResponseFormat = WebMessageFormat.Xml)]
+        string getAuthorsXml();
     }
 
 

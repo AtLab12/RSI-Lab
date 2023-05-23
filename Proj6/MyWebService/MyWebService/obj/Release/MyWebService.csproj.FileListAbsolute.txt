@@ -1,0 +1,7 @@
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\bin\MyWebService.dll.config
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\bin\MyWebService.dll
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\bin\MyWebService.pdb
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Release\MyWebService.csproj.AssemblyReference.cache
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Release\MyWebService.csproj.CoreCompileInputs.cache
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Release\MyWebService.dll
+C:\Studia\RSI-Lab\Proj6\MyWebService\MyWebService\obj\Release\MyWebService.pdb

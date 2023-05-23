@@ -1,5 +1,5 @@
 ﻿
-let address = "http://localhost:10000/Service1.svc/";
+let address = "http://10.8.0.6:10000/Service1.svc/";
 
 $(document).ready(function () {
     $('#getAllButton').click(function () {

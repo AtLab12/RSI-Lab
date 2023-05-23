@@ -55,6 +55,14 @@ namespace MyWebService
             if (person == null){
                 throw new WebFaultException<string>("400: BadRequest", HttpStatusCode.BadRequest);
             }
+            foreach (Person x in people){
+                if (person.email == x.email)
+                {
+                    throw new WebFaultException<string>("409: Data Conflict", HttpStatusCode.Conflict);
+                }
+            }
+
+
             int maxId = 0;
             foreach (Person temp in people){
                 if (temp.id > maxId){
@@ -86,7 +94,19 @@ namespace MyWebService
             if (index == -1){
                 throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
             }
+
             Person personToEdit = people.ElementAt(index);
+
+            foreach (Person x in people)
+            {
+                if (x.id != personToEdit.id)
+                {
+                    if (person.email == x.email)
+                    {
+                        throw new WebFaultException<string>("409: Data Conflict", HttpStatusCode.Conflict);
+                    }
+                }
+            }
             personToEdit.name = person.name;
             personToEdit.age = person.age;
             personToEdit.email = person.email;
@@ -115,7 +135,6 @@ namespace MyWebService
             return people.ElementAt(index);
         }
 
-        // pod laby 23.5
         public List<Person> getByNameJson(string name)
         {
             var persons = people.Where(p => p.name == name).ToList();
@@ -132,6 +151,13 @@ namespace MyWebService
             if (person == null)
             {
                 throw new WebFaultException<string>("400: BadRequest", HttpStatusCode.BadRequest);
+            }
+            foreach (Person x in people)
+            {
+                if (person.email == x.email)
+                {
+                    throw new WebFaultException<string>("409: Data Conflict", HttpStatusCode.Conflict);
+                }
             }
             int maxId = 0;
             foreach (Person temp in people)
@@ -170,6 +196,16 @@ namespace MyWebService
                 throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
             }
             Person personToEdit = people.ElementAt(index);
+            foreach (Person x in people)
+            {
+                if (x.id != personToEdit.id)
+                {
+                    if (person.email == x.email)
+                    {
+                        throw new WebFaultException<string>("409: Data Conflict", HttpStatusCode.Conflict);
+                    }
+                }
+            }
             personToEdit.name = person.name;
             personToEdit.age = person.age;
             personToEdit.email = person.email;
@@ -181,6 +217,18 @@ namespace MyWebService
         {
             return people.Count;
         }
+
+        public string getAuthorsJson()
+        {
+            return "Płóciennik Tomasz 260404 Zawada Mikołaj 259431";
+        }
+
+        public string getAuthorsXml()
+        {
+            return "Płóciennik Tomasz 260404 Zawada Mikołaj 259431";
+        }
+
+
 
     }
 }
