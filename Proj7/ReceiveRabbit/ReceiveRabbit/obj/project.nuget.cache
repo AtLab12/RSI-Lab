@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OT/wkf0tqO2z6YRMWI4MDGqsNWu36qRg+EeuYe4HUhGJ6DRfS+bjLmmqLMQBfdArotVj6T/vMXiZmi8dZK4guQ==",
+  "success": true,
+  "projectFilePath": "/Users/mikolajzawada/Projects/ReceiveRabbit/ReceiveRabbit/ReceiveRabbit.csproj",
+  "expectedPackageFiles": [
+    "/Users/mikolajzawada/.nuget/packages/rabbitmq.client/6.5.0/rabbitmq.client.6.5.0.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/mikolajzawada/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
